@@ -7,9 +7,14 @@ class Main extends Engine
 	override public function init()
 	{
 #if debug
-		HXP.console.enable();
+	#if flash
+		if (flash.system.Capabilities.isDebugger)
+	#end
+		{
+			HXP.console.enable();
+		}
 #end
-		HXP.scene = new MainScene();
+		HXP.scene = new effects.GameScene();
 	}
 
 	public static function main() { new Main(); }
