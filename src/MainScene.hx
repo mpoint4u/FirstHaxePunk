@@ -1,11 +1,13 @@
 package;
 
+import com.haxepunk.Entity;
+import com.haxepunk.graphics.Image;
 import com.haxepunk.Scene;
 
 class MainScene extends Scene
 {
 	// defining class members	
-	private var block:com.haxepunk.Entity;
+	private var block:Entity;
 
 	// constructor
 	public function new() {
@@ -15,7 +17,7 @@ class MainScene extends Scene
 	// methods
 	public override function begin() {
 		// add the png-image to the Entity
-		block = addGraphic(new com.haxepunk.graphics.Image("graphics/block.png"));
+		block = addGraphic(new Image("graphics/block.png"));
 	}
 
 	public override function update() {
