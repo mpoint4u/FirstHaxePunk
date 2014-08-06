@@ -12,6 +12,11 @@ class Main extends Engine
 		HXP.scene = new MainScene();
 	}
 
-	public static function main() { new Main(); }
+	public static function main() { 
+	
+			//new Main( ?width : Null<Int> , ?height : Null<Int> , ?frameRate : Null<Float> , ?fixed : Null<Bool> , ?renderMode : com.haxepunk.RenderMode );
+			//new Main(320, 240, 60, true); 
+			new Main();
+	}
 
 }
